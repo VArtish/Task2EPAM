@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://by.artish.task2.xml/candies"
+         xsi:schemaLocation="http://by.artish.task2.xml/candies shema.xsd">
+    <chocolate-candy id="Candy2" production="production">
+        <energy>123</energy>
+        <type>caramel</type>
+        <values>
+            <value>
+                <value-name>Ahaha</value-name>
+                <value-weight>103</value-weight>
+            </value>
+        </values>
+        <ingredients>
+            <ingredient>
+                <ingredient-name>Ahaha</ingredient-name>
+                <ingredient-weight>103</ingredient-weight>
+            </ingredient>
+        </ingredients>
+        <date>2020-05-11</date>
+        <name>123</name>
+        <filling>true</filling>
+        <chocolate-type>lactic</chocolate-type>
+    </chocolate-candy>
+    <caramel-candy id="Candy22" production="production">
+        <energy>123</energy>
+        <type>caramel</type>
+        <values>
+            <value>
+                <value-name>Ahaha</value-name>
+                <value-weight>103</value-weight>
+            </value>
+        </values>
+        <ingredients>
+            <ingredient>
+                <ingredient-name>Ahaha</ingredient-name>
+                <ingredient-weight>103</ingredient-weight>
+            </ingredient>
+        </ingredients>
+        <date>2020-05-11</date>
+        <name>123</name>
+        <lollipop>true</lollipop>
+    </caramel-candy>
+</candies>
