@@ -13,7 +13,7 @@ public class CandyDomParserTest extends TestCase {
     @Test
     public void testBuildCandies() throws XMLParserException {
         ParserBaseBuilder parser = CandyBuilderFactory.createCandyBuilder("DOM");
-        parser.buildCandies("D:\\Task2EPAM\\src\\test\\resources\\candyText.xml");
+        parser.buildCandies("D:\\Labs\\Task2EPAM\\src\\test\\resources\\candyText.xml");
         var a = parser.getCandies();
         var b = ReferenceCandy.getCandyList();
         Assert.assertArrayEquals(a.toArray(), b.toArray());

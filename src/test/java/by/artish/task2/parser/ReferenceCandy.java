@@ -5,11 +5,12 @@ import by.artish.task2.entity.*;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+
 public class ReferenceCandy {
 
     private static List<AbstractCandy> candiesList = new ArrayList<>();
 
-    public static List<AbstractCandy> getCandyList(){
+    public static List<AbstractCandy> getCandyList() {
         List<Value> values = new ArrayList<Value>();
         values.add(new Value("Ahaha", 103));
         List<Ingredient> ingredients = new ArrayList<Ingredient>();

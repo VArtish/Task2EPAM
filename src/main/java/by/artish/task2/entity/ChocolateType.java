@@ -9,17 +9,17 @@ public enum ChocolateType {
 
     private String type;
 
-    ChocolateType(String type){
+    ChocolateType(String type) {
         this.type = type;
     }
 
-    public String getType(){
+    public String getType() {
         return this.type;
     }
 
-    public static ChocolateType getChocolateType(String type){
+    public static ChocolateType getChocolateType(String type) {
         for (ChocolateType chocolateType : ChocolateType.values()) {
-            if(chocolateType.getType().equals(type)){
+            if (chocolateType.getType().equals(type)) {
                 return chocolateType;
             }
         }

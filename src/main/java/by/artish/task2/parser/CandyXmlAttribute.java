@@ -13,9 +13,9 @@ public enum CandyXmlAttribute {
         return name;
     }
 
-    public static CandyXmlAttribute getCandyXmlAttribute(String name){
-        for(CandyXmlAttribute attribute : CandyXmlAttribute.values()){
-            if(name.equals(attribute.getName())){
+    public static CandyXmlAttribute getCandyXmlAttribute(String name) {
+        for (CandyXmlAttribute attribute : CandyXmlAttribute.values()) {
+            if (name.equals(attribute.getName())) {
                 return attribute;
             }
         }

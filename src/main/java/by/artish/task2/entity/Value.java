@@ -6,10 +6,10 @@ public class Value {
     private String name;
     private int weight;
 
-    public Value(){
+    public Value() {
     }
 
-    public Value(String name, int weight){
+    public Value(String name, int weight) {
         this.name = name;
         this.weight = weight;
     }

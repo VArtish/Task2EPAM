@@ -20,7 +20,7 @@ public abstract class AbstractCandy {
         values = new ArrayList<Value>();
     }
 
-    public AbstractCandy(){
+    public AbstractCandy() {
     }
 
     public AbstractCandy(String id, String production, int energy, CandyType candyType, List<Value> values, List<Ingredient> ingredients, Date date, String name) {
@@ -74,27 +74,27 @@ public abstract class AbstractCandy {
         return id;
     }
 
-    public String getProduction(){
+    public String getProduction() {
         return production;
     }
 
-    public CandyType getCandyType(){
+    public CandyType getCandyType() {
         return candyType;
     }
 
-    public List<Value> getValues(){
+    public List<Value> getValues() {
         return values;
     }
 
-    public Date getDate(){
+    public Date getDate() {
         return date;
     }
 
-    public List<Ingredient> getIngredients(){
+    public List<Ingredient> getIngredients() {
         return List.copyOf(ingredients);
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 

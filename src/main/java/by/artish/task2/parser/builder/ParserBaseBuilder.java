@@ -9,13 +9,13 @@ import java.util.List;
 public abstract class ParserBaseBuilder {
     protected List<AbstractCandy> candies;
 
-    public ParserBaseBuilder(){
+    public ParserBaseBuilder() {
         candies = new ArrayList<AbstractCandy>();
     }
 
     public abstract void buildCandies(String path) throws XMLParserException;
 
-    public List<AbstractCandy> getCandies(){
+    public List<AbstractCandy> getCandies() {
         return List.copyOf(candies);
     }
 }

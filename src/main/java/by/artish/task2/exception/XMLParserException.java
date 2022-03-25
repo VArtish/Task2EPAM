@@ -1,6 +1,6 @@
 package by.artish.task2.exception;
 
-public class XMLParserException extends Exception{
+public class XMLParserException extends Exception {
     public XMLParserException() {
         super();
     }

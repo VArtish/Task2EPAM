@@ -15,7 +15,7 @@ public class CandySaxParserTest extends TestCase {
     @Test
     public void testBuildCandies() throws XMLParserException {
         ParserBaseBuilder parser = CandyBuilderFactory.createCandyBuilder("SAX");
-        parser.buildCandies("D:\\Task2EPAM\\src\\test\\resources\\candyText.xml");
+        parser.buildCandies("D:\\Labs\\Task2EPAM\\src\\test\\resources\\candyText.xml");
         var a = parser.getCandies();
         var b = ReferenceCandy.getCandyList();
         Assert.assertEquals(a.get(0), b.get(1));

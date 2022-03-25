@@ -10,18 +10,18 @@ public class Candies {
         candies = new ArrayList<AbstractCandy>();
     }
 
-    public Candies(){
+    public Candies() {
     }
 
-    public Candies(List<AbstractCandy> candies){
+    public Candies(List<AbstractCandy> candies) {
         this.candies = candies;
     }
 
-    public List<AbstractCandy> getCandies(){
+    public List<AbstractCandy> getCandies() {
         return List.copyOf(candies);
     }
 
-    public void setCandies(List<AbstractCandy> candies){
+    public void setCandies(List<AbstractCandy> candies) {
         this.candies = candies;
     }
 }

@@ -1,4 +1,5 @@
 package by.artish.task2.validator;
+
 import by.artish.task2.exception.XMLParserException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;

@@ -30,9 +30,9 @@ public enum CandyXmlTag {
         return name;
     }
 
-    public static CandyXmlTag getCandyXmlTag(String name){
-        for(CandyXmlTag tag : CandyXmlTag.values()){
-            if(name.equals(tag.getName())){
+    public static CandyXmlTag getCandyXmlTag(String name) {
+        for (CandyXmlTag tag : CandyXmlTag.values()) {
+            if (name.equals(tag.getName())) {
                 return tag;
             }
         }

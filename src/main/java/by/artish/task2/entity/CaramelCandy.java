@@ -9,10 +9,6 @@ public class CaramelCandy extends AbstractCandy {
     public CaramelCandy() {
     }
 
-    public CaramelCandy(boolean lollipop) {
-        this.lollipop = lollipop;
-    }
-
     public void setLollipop(boolean lollipop) {
         this.lollipop = lollipop;
     }
@@ -21,64 +17,17 @@ public class CaramelCandy extends AbstractCandy {
         return lollipop;
     }
 
-    public static class CaramelCandyBuilder{
-        private CaramelCandy caramelCandy;
+    public static class CaramelCandyBuilder extends AbstractCandyBuilder<CaramelCandy> {
 
         public CaramelCandyBuilder() {
-            caramelCandy = new CaramelCandy();
+            this.candy = new CaramelCandy();
         }
 
-        public CaramelCandyBuilder(CaramelCandy caramelCandy) {
-            this.caramelCandy = caramelCandy;
-        }
-
-        public CaramelCandyBuilder withLollipop(boolean lollipop){
-            caramelCandy.lollipop = lollipop;
+        public CaramelCandyBuilder withLollipop(boolean lollipop) {
+            candy.lollipop = lollipop;
             return this;
         }
 
-        public CaramelCandyBuilder withId(String id){
-            caramelCandy.id = id;
-            return this;
-        }
 
-        public CaramelCandyBuilder withProduction(String production){
-            caramelCandy.production = production;
-            return this;
-        }
-
-        public CaramelCandyBuilder withEnergy(int energy){
-            caramelCandy.energy = energy;
-            return this;
-        }
-
-        public CaramelCandyBuilder withCandyType(CandyType candyType){
-            caramelCandy.candyType = candyType;
-            return this;
-        }
-
-        public CaramelCandyBuilder withDate(Date date){
-            caramelCandy.date = date;
-            return this;
-        }
-
-        public CaramelCandyBuilder withName(String name){
-            caramelCandy.name = name;
-            return this;
-        }
-
-        public CaramelCandyBuilder withValues(List<Value> values){
-            caramelCandy.values = values;
-            return this;
-        }
-
-        public CaramelCandyBuilder withIngredients(List<Ingredient> ingredients){
-            caramelCandy.ingredients = ingredients;
-            return this;
-        }
-
-        public CaramelCandy build(){
-            return caramelCandy;
-        }
     }
 }

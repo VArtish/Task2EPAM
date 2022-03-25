@@ -5,6 +5,7 @@ import by.artish.task2.parser.CandyXmlAttribute;
 import by.artish.task2.parser.CandyXmlTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
+
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,7 @@ public class CandySaxParserHandler extends DefaultHandler {
         return candies;
     }
 
-    private void initializationCandy(Attributes attributes){
+    private void initializationCandy(Attributes attributes) {
         int indexId = attributes.getIndex(CandyXmlAttribute.ID.getName());
         currentCandy.setId(attributes.getValue(indexId));
 
@@ -87,7 +88,7 @@ public class CandySaxParserHandler extends DefaultHandler {
                     caramelCandy.setLollipop(Boolean.parseBoolean(data));
                     currentCandy = caramelCandy;
                 }
-                case FILLING ->{
+                case FILLING -> {
                     ChocolateCandy chocolateCandy = (ChocolateCandy) currentCandy;
                     chocolateCandy.setFilling(Boolean.parseBoolean(data));
                     currentCandy = chocolateCandy;

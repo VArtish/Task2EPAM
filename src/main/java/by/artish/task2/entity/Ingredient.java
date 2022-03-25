@@ -6,18 +6,18 @@ public class Ingredient {
     private String name;
     private int weight;
 
-    public Ingredient(){
+    public Ingredient() {
     }
 
-    public Ingredient(String name){
+    public Ingredient(String name) {
         this.name = name;
     }
 
-    public Ingredient(int weight){
+    public Ingredient(int weight) {
         this.weight = weight;
     }
 
-    public Ingredient(String name, int weight){
+    public Ingredient(String name, int weight) {
         this.name = name;
         this.weight = weight;
     }
