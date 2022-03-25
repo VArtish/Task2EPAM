@@ -134,10 +134,10 @@ public class CandyStAXParser extends ParserBaseBuilder {
                     }
                 }
             }
-
         } catch (FileNotFoundException | XMLStreamException exc) {
             LOGGER.log(Level.ERROR, exc.getMessage());
             throw new XMLParserException(exc.getMessage());
+
         }
     }
 
