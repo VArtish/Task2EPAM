@@ -27,7 +27,6 @@ public class ChocolateCandy extends AbstractCandy {
     }
 
     public static class ChocolateCandyBuilder extends AbstractCandyBuilder<ChocolateCandy> {
-
         public ChocolateCandyBuilder() {
             candy = new ChocolateCandy();
         }

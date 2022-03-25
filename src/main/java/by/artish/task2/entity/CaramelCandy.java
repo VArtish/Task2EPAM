@@ -18,7 +18,6 @@ public class CaramelCandy extends AbstractCandy {
     }
 
     public static class CaramelCandyBuilder extends AbstractCandyBuilder<CaramelCandy> {
-
         public CaramelCandyBuilder() {
             this.candy = new CaramelCandy();
         }
@@ -27,7 +26,5 @@ public class CaramelCandy extends AbstractCandy {
             candy.lollipop = lollipop;
             return this;
         }
-
-
     }
 }
