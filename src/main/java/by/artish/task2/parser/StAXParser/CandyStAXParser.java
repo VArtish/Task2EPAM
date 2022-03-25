@@ -127,7 +127,7 @@ public class CandyStAXParser extends ParserBaseBuilder {
         }
     }
 
-    private void checkAttribute(AbstractCandy candy, StartElement startElement){
+    private void checkAttribute(AbstractCandy candy, StartElement startElement) {
         Attribute idAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.ID.getName()));
         Attribute productionAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.PRODUCTION.getName()));
         if (idAttr != null) {
