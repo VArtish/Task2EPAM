@@ -48,24 +48,10 @@ public class CandyStAXParser extends ParserBaseBuilder {
                     StartElement startElement = xmlEvent.asStartElement();
                     if (startElement.getName().getLocalPart().equals(CandyXmlTag.CHOCOLATE_CANDY.getName())) {
                         candy = new ChocolateCandy();
-                        Attribute idAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.ID.getName()));
-                        Attribute productionAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.PRODUCTION.getName()));
-                        if (idAttr != null) {
-                            candy.setId(idAttr.getValue());
-                        }
-                        if (productionAttr != null) {
-                            candy.setProduction(productionAttr.getValue());
-                        }
+                        checkAttribute(candy, startElement);
                     } else if (startElement.getName().getLocalPart().equals(CandyXmlTag.CARAMEL_CANDY.getName())) {
                         candy = new CaramelCandy();
-                        Attribute idAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.ID.getName()));
-                        Attribute productionAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.PRODUCTION.getName()));
-                        if (idAttr != null) {
-                            candy.setId(idAttr.getValue());
-                        }
-                        if (productionAttr != null) {
-                            candy.setProduction(productionAttr.getValue());
-                        }
+                        checkAttribute(candy, startElement);
                     } else if (startElement.getName().getLocalPart().equals(CandyXmlTag.ENERGY.getName())) {
                         xmlEvent = reader.nextEvent();
                         candy.setEnergy(Integer.parseInt(xmlEvent.asCharacters().getData()));
@@ -138,6 +124,17 @@ public class CandyStAXParser extends ParserBaseBuilder {
             LOGGER.log(Level.ERROR, exc.getMessage());
             throw new XMLParserException(exc.getMessage());
 
+        }
+    }
+
+    private void checkAttribute(AbstractCandy candy, StartElement startElement){
+        Attribute idAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.ID.getName()));
+        Attribute productionAttr = startElement.getAttributeByName(new QName(CandyXmlAttribute.PRODUCTION.getName()));
+        if (idAttr != null) {
+            candy.setId(idAttr.getValue());
+        }
+        if (productionAttr != null) {
+            candy.setProduction(productionAttr.getValue());
         }
     }
 
